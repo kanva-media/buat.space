@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="buat.space builds simple, professional websites for businesses without the usual hassle.">
+<title>buat.space — Simple websites for growing businesses</title>
+<style>
+:root{--g:#006B3F;--gd:#004B2C;--y:#FFC928;--c:#F7F5ED;--w:#fff;--i:#171717;--m:#646862;--l:#DCDDD5;--r:24px;--max:1160px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--c);color:var(--i);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.55}a{color:inherit;text-decoration:none}.container{width:min(var(--max),calc(100% - 40px));margin:auto}
+header{border-bottom:1px solid var(--l);position:sticky;top:0;z-index:10;background:rgba(247,245,237,.92);backdrop-filter:blur(12px)}nav{height:78px;display:flex;align-items:center;justify-content:space-between}.brand img{width:122px;display:block}.nav{display:flex;gap:30px;align-items:center;font-size:14px;font-weight:650}.nav a:not(.cta):hover{color:var(--g)}.cta{background:var(--g);color:#fff;padding:11px 18px;border-radius:999px}
+.ey{display:flex;gap:9px;align-items:center;color:var(--g);font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;margin-bottom:20px}.ey:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--y)}
+.hero{padding:100px 0 92px;display:grid;grid-template-columns:1.05fr .95fr;gap:72px;align-items:center}h1{font-size:clamp(50px,7vw,82px);line-height:.96;letter-spacing:-.065em;margin:0 0 28px;max-width:760px}h1 span{color:var(--g)}.lead{font-size:19px;color:var(--m);max-width:610px;margin:0 0 34px}.actions{display:flex;gap:12px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 21px;border:1px solid var(--g);border-radius:999px;font-size:14px;font-weight:750}.primary{background:var(--g);color:#fff}.secondary{color:var(--g)}.note{margin-top:22px;color:#7a7d77;font-size:12px}
+.visual{background:var(--g);padding:14px;border-radius:32px;transform:rotate(1deg);box-shadow:0 25px 70px rgba(0,75,44,.16)}.browser{background:#fff;border-radius:23px;overflow:hidden}.top{height:38px;display:flex;gap:6px;align-items:center;padding:0 14px;border-bottom:1px solid #ecece8}.dot{width:7px;height:7px;background:#d0d2cc;border-radius:50%}.mock{padding:30px;min-height:420px}.mocknav{display:flex;justify-content:space-between;font-size:9px;font-weight:800;color:var(--g);margin-bottom:70px}.label{font-size:9px;letter-spacing:.14em;color:#8b8f89;margin-bottom:12px}.mocktitle{font-size:43px;line-height:.98;letter-spacing:-.06em;font-weight:800;max-width:350px}.mocktitle span{color:var(--g)}.line{height:7px;width:82%;background:#dedfd9;border-radius:99px;margin-top:18px}.line.short{width:61%;margin-top:8px}.mockbtn{margin-top:26px;width:112px;height:33px;border-radius:999px;background:var(--g)}.accent{margin-top:42px;background:var(--c);border-radius:16px;padding:17px;display:flex;justify-content:space-between;font-size:11px;font-weight:800;color:var(--g)}.ydot{width:18px;height:18px;background:var(--y);border-radius:50%}
+.strip{border-top:1px solid var(--l);border-bottom:1px solid var(--l);padding:23px 0}.stripin{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;color:#737771;font-size:12px;font-weight:700}
+section{padding:105px 0}.problem{display:grid;grid-template-columns:.8fr 1.2fr;gap:85px}.statement{font-size:31px;line-height:1.16;letter-spacing:-.04em}.list{border-top:1px solid var(--l)}.item{display:grid;grid-template-columns:42px 1fr;gap:20px;padding:23px 0;border-bottom:1px solid var(--l)}.num{font-size:11px;color:#9a9d97}.item strong{display:block;font-size:17px;margin-bottom:5px}.item p{margin:0;color:var(--m);font-size:14px}
+.green{background:var(--g);color:#fff}.green .ey{color:var(--y)}.green .head p{color:#cfe2d8}.head{max-width:710px;margin-bottom:52px}.head h2{font-size:clamp(40px,5vw,62px);line-height:1;letter-spacing:-.06em;margin:0 0 18px}.head p{color:var(--m);font-size:17px;max-width:620px}.steps{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid rgba(255,255,255,.22);border-left:1px solid rgba(255,255,255,.22)}.step{min-height:250px;padding:30px;border-right:1px solid rgba(255,255,255,.22);border-bottom:1px solid rgba(255,255,255,.22)}.sn{font-size:11px;color:#a9c8b9;margin-bottom:58px}.step h3{font-size:22px;line-height:1.12;margin:0 0 10px}.step p{font-size:14px;color:#cfe2d8;margin:0;max-width:290px}
+.offer{display:grid;grid-template-columns:1fr .8fr;gap:28px}.offerbox{background:var(--y);border-radius:var(--r);padding:45px;min-height:480px;display:flex;flex-direction:column;justify-content:space-between}.offerbox .ey{color:var(--g)}.offerbox h3{font-size:50px;line-height:1;letter-spacing:-.06em;margin:0;max-width:540px}.price{font-size:44px;font-weight:850;color:var(--g);letter-spacing:-.055em}.small{font-size:12px;color:#56604d}.included{border:1px solid var(--l);border-radius:var(--r);padding:36px;background:rgba(255,255,255,.4)}.included h4{margin:0 0 20px}.included ul{list-style:none;padding:0;margin:0}.included li{padding:12px 0;border-bottom:1px solid var(--l);font-size:14px}.included li:before{content:"✓";font-weight:900;color:var(--g);margin-right:10px}
+.timeline{display:grid;grid-template-columns:1fr 1fr;gap:75px}.tlist{border-top:1px solid var(--l)}.tr{display:grid;grid-template-columns:105px 1fr;gap:20px;padding:21px 0;border-bottom:1px solid var(--l)}.tr strong{font-size:13px;color:var(--g)}.tr p{margin:0;font-size:14px;color:var(--m)}
+.faq{max-width:860px}details{border-top:1px solid var(--l);padding:22px 0}details:last-child{border-bottom:1px solid var(--l)}summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:30px;font-weight:750;font-size:17px}summary::-webkit-details-marker{display:none}summary:after{content:"+";color:#777}details[open] summary:after{content:"−"}details p{margin:14px 0 0;color:var(--m);font-size:14px;max-width:720px}
+.final{background:var(--gd);color:#fff;border-radius:30px;padding:70px;display:flex;align-items:flex-end;justify-content:space-between;gap:50px}.final h2{font-size:clamp(43px,6vw,72px);line-height:.97;letter-spacing:-.06em;margin:0 0 18px;max-width:700px}.final p{color:#cfe2d8;max-width:520px;margin:0}.final .btn{background:var(--y);color:var(--g);border-color:var(--y)}footer{padding:34px 0 46px;color:#737771;font-size:12px}.foot{display:flex;justify-content:space-between;gap:20px;border-top:1px solid var(--l);padding-top:25px}.footbrand{font-weight:850;color:var(--g);font-size:16px}
+@media(max-width:850px){.nav a:not(.cta){display:none}.hero,.problem,.offer,.timeline{grid-template-columns:1fr}.hero{padding-top:70px;gap:45px}.visual{transform:none}.steps{grid-template-columns:1fr 1fr}.final{padding:48px 32px;flex-direction:column;align-items:flex-start}}
+@media(max-width:560px){.container{width:min(var(--max),calc(100% - 28px))}.hero{padding-top:60px}h1{font-size:53px}.brand img{width:105px}section{padding:76px 0}.steps{grid-template-columns:1fr}.offerbox{padding:32px;min-height:400px}.included{padding:28px}.mock{min-height:350px}.mocktitle{font-size:35px}.foot{flex-direction:column}}
+</style>
+</head>
+<body>
+<header><div class="container"><nav>
+<a class="brand" href="#"><img src="buat-space-logo.png" alt="buat.space"></a>
+<div class="nav"><a href="#process">Process</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a><a class="cta" href="#start">Start a project →</a></div>
+</nav></div></header>
+
+<main>
+<section class="container hero">
+<div><div class="ey">Simple websites for growing businesses</div>
+<h1>A good website shouldn't be a <span>complicated project.</span></h1>
+<p class="lead">We turn your business information, brand and ideas into a clear, professional website — without the usual back-and-forth of a traditional web project.</p>
+<div class="actions"><a class="btn primary" href="#start">Start a project →</a><a class="btn secondary" href="#process">See how it works</a></div>
+<div class="note">First draft in 2 working days after we receive everything we need.</div></div>
+<div class="visual"><div class="browser"><div class="top"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div><div class="mock">
+<div class="mocknav"><span>YOUR BRAND</span><span>ABOUT &nbsp; SERVICES &nbsp; CONTACT</span></div><div class="label">YOUR BUSINESS / ONLINE</div>
+<div class="mocktitle">Make it easy for people to <span>understand</span> your business.</div><div class="line"></div><div class="line short"></div><div class="mockbtn"></div>
+<div class="accent"><span>BUILT SIMPLY.</span><span class="ydot"></span></div></div></div></div>
+</section>
+
+<div class="strip"><div class="container stripin"><span>Clear structure</span><span>Thoughtful copy</span><span>Responsive design</span><span>AI-assisted production</span><span>Fast delivery</span></div></div>
+
+<section class="container"><div class="problem">
+<div><div class="ey">The problem</div><div class="statement">You know your business. You shouldn't have to become a web developer to explain it online.</div></div>
+<div class="list">
+<div class="item"><span class="num">01</span><div><strong>You know your business. Writing about it is harder.</strong><p>We ask the right questions and turn your answers into useful website content.</p></div></div>
+<div class="item"><span class="num">02</span><div><strong>You have references, but not a clear direction.</strong><p>We look at what you like, understand why you like it, and turn that into a visual direction.</p></div></div>
+<div class="item"><span class="num">03</span><div><strong>You don't want a website project that drags on.</strong><p>A defined process keeps the project moving from intake to launch.</p></div></div>
+</div></div></section>
+
+<section class="green" id="process"><div class="container"><div class="head"><div class="ey">The process</div><h2>Tell us about your business. We'll take it from there.</h2><p>Six simple steps. One clear outcome: a website that's ready to represent your business.</p></div>
+<div class="steps">
+<div class="step"><div class="sn">01 / INTAKE</div><h3>Tell us about your business.</h3><p>Share your content, brand, assets and references through one guided onboarding.</p></div>
+<div class="step"><div class="sn">02 / DIRECTION</div><h3>We structure the story.</h3><p>We turn your information into a clear website structure, message hierarchy and visual direction.</p></div>
+<div class="step"><div class="sn">03 / BUILD</div><h3>We build the first draft.</h3><p>Your first website draft is prepared within 2 working days after all required materials arrive.</p></div>
+<div class="step"><div class="sn">04 / FEEDBACK</div><h3>You tell us what to change.</h3><p>You review the draft and submit one consolidated round of feedback.</p></div>
+<div class="step"><div class="sn">05 / REFINE</div><h3>We polish it.</h3><p>We make the agreed changes, check the website across devices and prepare it for launch.</p></div>
+<div class="step"><div class="sn">06 / LAUNCH</div><h3>It goes live.</h3><p>We connect your domain, complete the final checks and launch your website.</p></div>
+</div></div></section>
+
+<section class="container" id="pricing"><div class="head"><div class="ey">Simple pricing</div><h2>One clear package to get you started.</h2><p>No complicated tiers. No mysterious development costs. Just a defined scope and a clear process.</p></div>
+<div class="offer"><div class="offerbox"><div><div class="ey">Business website</div><h3>A professional website, built around your business.</h3></div><div><div class="price">RM2,000</div><div class="small">one-time project fee</div></div></div>
+<div class="included"><h4>What's included</h4><ul><li>Up to 5–6 sections/pages</li><li>Responsive desktop + mobile design</li><li>Brand guideline implementation</li><li>Content structuring & refinement</li><li>Contact / WhatsApp CTA</li><li>Contact form</li><li>Basic SEO setup</li><li>Domain connection</li><li>One consolidated revision round</li><li>First draft in 2 working days</li></ul></div></div></section>
+
+<section class="container"><div class="timeline"><div class="head"><div class="ey">Built for momentum</div><h2>Fast, but not rushed.</h2><p>AI helps us move faster. Human judgement shapes the final website. Every project is reviewed and tested before it goes live.</p></div>
+<div class="tlist"><div class="tr"><strong>Day 1</strong><p>Content and brand review.</p></div><div class="tr"><strong>Day 2</strong><p>Website structure and direction.</p></div><div class="tr"><strong>Day 3–4</strong><p>Website production and responsive implementation.</p></div><div class="tr"><strong>Day 4–5</strong><p>First draft delivered.</p></div><div class="tr"><strong>Next 5 days</strong><p>Feedback, refinement, testing and launch.</p></div></div></div></section>
+
+<section class="container" id="faq"><div class="head"><div class="ey">FAQ</div><h2>Before we start.</h2></div><div class="faq">
+<details><summary>Do I need to write all the website content?</summary><p>No. We ask structured questions about your business, customers and services. We use your answers to organise and refine the website content.</p></details>
+<details><summary>Can I give you a website I like?</summary><p>Yes. Share 2–3 references and tell us what you like about each one. We use them to understand your preferred direction rather than copy them.</p></details>
+<details><summary>Do you use AI to build the website?</summary><p>Yes. AI is part of our production workflow. It helps us move faster, but every website is reviewed, tested and refined before delivery.</p></details>
+<details><summary>How long does the project take?</summary><p>The first draft is targeted within 2 working days after all required materials are received. Final delivery is targeted within 5 working days after your consolidated feedback.</p></details>
+<details><summary>What if I need more than the standard package?</summary><p>Additional pages, advanced functionality, e-commerce, booking systems and other custom requirements can be quoted separately.</p></details>
+<details><summary>Can you maintain the website after launch?</summary><p>Yes. A separate monthly website care plan can cover hosting management, monitoring and a defined amount of minor updates.</p></details>
+</div></section>
+
+<section class="container" id="start"><div class="final"><div><h2>Let's build the website your business actually needs.</h2><p>Tell us a little about your business. We'll take it from there.</p></div><a class="btn" href="mailto:hello@buat.space">Start a project →</a></div></section>
+</main>
+
+<footer class="container"><div class="foot"><span class="footbrand">buat.space</span><span>Simple websites for growing businesses.</span><span>© 2026 buat.space</span></div></footer>
+</body></html>
